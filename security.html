@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Security Policy — CRA Advisory for Jira</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 720px; margin: 2rem auto; padding: 0 1rem; line-height: 1.55; color: #172B4D; }
+    h1,h2 { line-height: 1.25; }
+    a { color: #0052CC; }
+  </style>
+</head>
+<body>
+<h1>Security Policy — CRA Advisory for Jira</h1>
+<p><strong>Last updated:</strong> 2026-11-25</p>
+<p>This policy covers the Atlassian Forge app <strong>CRA Advisory for Jira</strong> (“the App”), published by <strong>Najafzadeh Reza</strong> (egyéni vállalkozó, Hungary).</p>
+<p>It describes the security controls, vulnerability management, and incident response for the App. Data handling is in the <a href="./privacy/">Privacy Policy</a>.</p>
+<h2>1. Security controls</h2>
+<ul>
+<li>The App is a native Forge app. It runs on the customer’s Jira site. Atlassian hosts the compute and the storage.</li>
+<li>The publisher does not run a server for this App. The App has no egress, no analytics, and no public fetch. Customer records are not sent to the publisher.</li>
+<li>Records stay in Forge Storage on that Jira site, and in Jira. Uninstalling the App removes its Forge Storage for that installation.</li>
+<li>Scopes are <code>read:jira-work</code>, <code>read:jira-user</code>, and <code>storage:app</code>. The App reads the current issue and Jira user names for the escalation roster. It does not write Jira issues.</li>
+<li>Who can open the App follows that site’s Jira permissions. The publisher cannot sign in to a customer site.</li>
+<li>CSAF text and the dossier PDF are built for the user to copy. The App does not send those files anywhere.</li>
+<li>Customer advisories keep mitigation and affected versions. They leave out exploit detail.</li>
+<li>The publisher does not claim a certification for the App.</li>
+</ul>
+<h2>2. Vulnerability management</h2>
+<ul>
+<li>Report a suspected vulnerability to <a href="mailto:reza@paresh.top">reza@paresh.top</a> with the subject “Security”, or open a request in the <a href="https://paresh-team.atlassian.net/servicedesk/customer/portal/2">support portal</a>.</li>
+<li>Include the app version, what you observed, and whether customer data could be exposed. Do not include exploit proof-of-concept text.</li>
+<li>The publisher confirms receipt, decides whether the report affects this App, and ships a fixed version through the Atlassian Marketplace when a change is required.</li>
+<li>There is no separately hosted service to patch. Fixes ship as a new Marketplace version of this Forge app.</li>
+<li>There is no bug-bounty program.</li>
+</ul>
+<h2>3. Incident response</h2>
+<ul>
+<li>An incident is a confirmed weakness in this App that could expose or change customer data, or unauthorized access to the publisher’s Marketplace account.</li>
+<li>Customer CRA records are stored by Atlassian on the customer site. An incident in Forge or Jira itself is handled by Atlassian under the customer’s agreement with Atlassian.</li>
+<li>When the publisher confirms a defect in this App, the publisher ships a fixed version and tells affected customers through the support contact on the listing. The notice says what happened and what the customer should do, including updating or uninstalling the App.</li>
+<li>Public notes and customer advisories do not include exploit detail.</li>
+</ul>
+<h2>4. Contact</h2>
+<p>Security contact: <a href="mailto:reza@paresh.top">reza@paresh.top</a><br />
+Najafzadeh Reza, Hungary<br />
+Support portal: <a href="https://paresh-team.atlassian.net/servicedesk/customer/portal/2">https://paresh-team.atlassian.net/servicedesk/customer/portal/2</a></p>
+</body>
+</html>
